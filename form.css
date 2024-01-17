@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+.feedback-form {
+  width: 480px;
+}
+
+.feedback-form > label {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(28, 145, 166);
+}
+
+.feedback-form .input {
+  border: 1px solid rgb(0, 255, 255);
+  border-radius: 5px;
+  font: inherit;
+  padding: 8px;
+}
+
+.feedback-form .textarea {
+  border-color: rgb(0, 255, 255);
+  border-radius: 5px;
+  font: inherit;
+  padding: 8px;
+}
+
+[value] {
+  color: rgba(4, 184, 184, 0.808);
+}
+
+.feedback-form .textarea {
+  resize: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid rgba(4, 184, 184, 0.808);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border: 2px solid rgba(4, 184, 184, 0.808);
+}
+
+.feedback-form > button {
+  margin-left: 8px;
+  background-color: rgba(0, 255, 255, 0.49);
+  border-radius: 5px;
+  border: 1px solid rgb(28, 145, 166);
+  color: rgb(28, 145, 166);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form > button:hover,
+.feedback-form > button:focus {
+  border: 2px solid rgb(28, 145, 166);
+}
